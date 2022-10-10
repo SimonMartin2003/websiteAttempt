@@ -1,10 +1,20 @@
 <script lang="ts">
-	export let name: string;
+	let name = "Awesomesauce";
+	let numClick = 0;
+	let showText = false;
+	let event = ()=>{
+		numClick++
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	
+	<button on:mouseenter={event}>You've clicked the button {numClick} time(s)!</button>
+	{#if showText}
+		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	{/if}
+
 </main>
 
 <style>
