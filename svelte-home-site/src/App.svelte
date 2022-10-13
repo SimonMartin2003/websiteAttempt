@@ -1,24 +1,24 @@
 <script lang="ts">
+	import MainCard from "./components/MainCard.svelte";
 	let name = "Awesomesauce";
 	let numClick = 0;
 	let showText = false;
 	let event = ()=>{
 		numClick++
-	}
+	};
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	
-	<button on:mouseenter={event}>You've clicked the button {numClick} time(s)!</button>
-	{#if showText}
-		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	{/if}
+	<MainCard/>
 
+	{#each ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] as numbers}
+		<h1>{numbers}</h1>
+	{/each}
 </main>
 
 <style>
 	main {
+		
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
