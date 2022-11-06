@@ -1,16 +1,27 @@
 <script>
     import Card from "./Card.svelte"
 </script>
+    <section>
+        <div>
+        <Card>  
+        <h1>I'm Simon Martin</h1>
 
-<Card>  
-    <h1>I'm Simon Martin</h1>
-
-    <h3>I'm a Japanese language student at Rochester Institute of Technology,
-     interested in software engineering and web development</h3>
-</Card>
+        <h3>I'm a Japanese language student at Rochester Institute of Technology,
+        interested in software engineering and web development</h3>
+        </Card>
+        </div>
+</section>
 
 <style>
-    .h1{
-        text-align: left;
+    div{
+        
+
     }
+    section{
+		min-height: 100vh;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+        background-image: url("top-bg.png");
+	}
 </style>

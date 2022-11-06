@@ -1,19 +1,22 @@
 <script lang="ts">
 	import MainCard from "./components/MainCard.svelte";
-	let name = "Awesomesauce";
-	let numClick = 0;
-	let showText = false;
-	let event = ()=>{
-		numClick++
-	};
+	import Card from "./components/Card.svelte";
+	
 </script>
 
 <main>
-	<MainCard/>
 
+
+		<MainCard/>
+
+
+	
 	{#each ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] as numbers}
-		<h1>{numbers}</h1>
+		<div style="margin: 20%;">
+		<Card><h1 style="text-align: center;">{numbers}</h1></Card>	
+		</div>
 	{/each}
+	
 </main>
 
 <style>
@@ -25,8 +28,10 @@
 		margin: 0 auto;
 	}
 
+	
+
 	h1 {
-		color: #ff3e00;
+		color: #777777;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;

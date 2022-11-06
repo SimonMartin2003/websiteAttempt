@@ -4,9 +4,9 @@
 <style>
     .card{
         background-color: #fff;
-        border-radius: 15px;
-        padding: 50px 50px;
+        border-radius: 10px;
+        padding: 20px 20px;
         text-align: left;
-        position: fixed;
+        position: relative;
     }
 </style>
