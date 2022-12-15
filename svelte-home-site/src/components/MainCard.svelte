@@ -23,5 +23,7 @@
 		justify-content: center;
 		display: flex;
         background-image: url("top-bg.png");
+        margin: 0;
+        object-fit: cover;
 	}
 </style>
