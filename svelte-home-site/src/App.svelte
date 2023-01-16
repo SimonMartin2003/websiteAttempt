@@ -6,7 +6,8 @@
 
 <main>
 
-
+	<h1>HOWDY!</h1>
+	<MainCard></MainCard>
 	
 </main>
 
